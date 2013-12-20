@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1 Game Menu
+    div#userinfo
+        span Your username:
+        span#username #{username}
+    div
+        h3 Room List
+        ul#roomlist
+    div#createroom
+        input(id='roomName',type='text',value='',placeholder='Room name',name='roomName')
+        button#btnCreate Create Room
+    div#countDown
+    div#gameArea
+    div#gameScore
+    div#result
+
+    script(src='/javascripts/client.js')
